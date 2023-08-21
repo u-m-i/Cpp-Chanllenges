@@ -2,3 +2,8 @@
 *~
 *.swp
 
+
+# C++ object files
+
+*.a
+*.o
