@@ -11,10 +11,10 @@ int main()
 	std::cin >> grade;
 
 	// Ascii code for:
-	// A: 14
-	// B: 24
-	// C: 34
-	// D: 54
+	// A: 65 ; 140 - 90 = 50 / 10 + 60 
+	// B: 66 ; 140 - 80 = 60 / 10 + 60
+	// C: 67 ; 140 - 70 = 70 / 10 + 60
+	// D: 68 ; 140 - 60 = 80 / 10 + 60
 
 
 	// Result is the subtrahend of the grade to 100	
@@ -22,20 +22,11 @@ int main()
 
 	if(result <= 30)
 	{
-		float tenth_part = (result/10.0);
 
-
-		double subtrahend = std::fmod(result/10.0, double(result/10)) * 10.0;
-
-
-		std::cout << subtrahend;	
-
-
-		result = (result - subtrahend) + (4);
 	}
 	else
 	{
-		result = 54;
+		result = 68;
 	}
 
 
