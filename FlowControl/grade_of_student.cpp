@@ -3,7 +3,19 @@
  */
 
 #include<iostream>
-#include<cmath>
+#include<algorithm>
+#include<string>
+
+int calculate_diff(int grade)
+{
+	int total = std::clamp(grade, 60, 90);
+
+
+	return total;
+	
+}
+
+
 
 int main()
 {
@@ -18,10 +30,19 @@ int main()
 
 
 	// Result is the subtrahend of the grade to 100	
-	result = 100 - grade;
+	result = 140 - grade;
 
-	if(result <= 30)
+	if(result <= 70)
 	{
+		int substancial = std::clamp(grade, 60, 90);
+
+		int difference = 140 - substancial;
+
+
+		std::cout << difference  << '\n';
+
+
+		result = (difference / 10) + 60;
 
 	}
 	else
@@ -36,3 +57,4 @@ int main()
 	return 0;
 
 }
+
