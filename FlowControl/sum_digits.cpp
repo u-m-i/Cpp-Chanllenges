@@ -10,21 +10,25 @@ int main()
 
 	std::cin >>  number;
 
-	int digits = to_string(number).length();	
+	std::string digits = to_string(number);	
 
 
 	int result = 0;
 
 
-	for(int i = 1;i < (digits - 1);++i)
+	// The numbers' characters are stored in ASCII code
+	// (American Standard for Code Information Interchage)
+	// The first one '0' is represented with 48, the next '1' 
+	// takes the 49, and so on. In order to cast the char to int, 
+	// we can substract the '0' from any other number.
+	// Remember this is only for characters and not an array of them.
+
+	for(int i = 0;i < (digits.length()); ++i)
 	
 	{
-		result += (number % (10 * i));	
+		int digit = digits[i] - '0';
 
-		if(i == (digits - 1))
-		{
-			result += (number / (10 * i));
-		}
+		result += digit;
 	    
 	}
 
