@@ -16,9 +16,7 @@ int main()
 
 	std::cin >> user_number;
 
-
 	std::cout << (!is_perfect(user_number) ? "Not a" : "") << " Perfect Number" << std::endl; 
-
 
 	return 0;
 }
@@ -27,7 +25,6 @@ int main()
 bool is_perfect(int n)
 {
 	int total = 1;
-
 
 	for(int i = LOWEST_PRIME; i < n; ++i)
 	{

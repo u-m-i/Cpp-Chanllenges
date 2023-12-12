@@ -1,6 +1,10 @@
 
 #include<iostream>
 
+bool has_capital(char[] user_name)
+{
+}
+
 
 int main()
 {

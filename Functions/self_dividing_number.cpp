@@ -19,9 +19,7 @@ int main()
 
 	std::cin >> user_number;
 
-
 	std::cout << (is_self_dividing(user_number) ? "" : "Not a ") << "Self Dividing Number" << std::endl;
-
 
 	return 0;
 }
