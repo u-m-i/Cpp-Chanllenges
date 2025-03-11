@@ -5,9 +5,7 @@
 
 #include<iostream>
 
-
 #define LOWEST_PRIME 2
-
 
 int phi(int n);
 
@@ -60,5 +58,4 @@ int phi(int n)
 	totient -= (totient / n);
 
 	return totient;
-
 }
